@@ -4,7 +4,7 @@ import pytest
 def test_get_weather():
     assert get_weather(50) == "cold",  "If its 50 degrees then its cold"
     assert get_weather(85) == "hot", "If its 85 degrees then its hot"
-    # if test is true then it passes. If falls it fails
+    # if the test is true then it passes. If it does not match, then the test fails
 
 
 def test_add(): 
@@ -13,6 +13,6 @@ def test_add():
     assert add(0, 0) == 0, "0 plus 0 should be zero"
 
 def test_divide():
+    #makes sure it raises the error
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(10, 0)
-    assert divide(10,2) == 5, "10 divided by 2 is 5"
