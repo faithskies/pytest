@@ -1,4 +1,4 @@
-from main import UserManager
+from main_basic_user_mgr import UserManager
 import pytest
 
 @pytest.fixture
