@@ -1,3 +1,5 @@
+#Examples of some basic assertion tests. Also includes with pytest.raises(ValueError, match=
+
 from main import get_weather, add, divide
 import pytest
 

@@ -1,9 +1,11 @@
-from main_basic_user_mgr import UserManager
+#Example with a fixture that resets the data between each test. 
+
+from example_user_mgr import UserManager
 import pytest
 
 @pytest.fixture
 def user_manager():
-    """Creates a fresh instance of a UserManager before each test"""
+    #Creates a fresh instance of a UserManager before each test
     return UserManager()
 
 #Tests
