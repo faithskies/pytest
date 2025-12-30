@@ -1,7 +1,7 @@
 # example of if you have mutliple parameters, that you would like to test without having to assert each one individually
 
 import pytest
-from example_multiple_parameters import is_prime
+from ex_multiple_parameters import is_prime
 
 
 @pytest.mark.parametrize("num, expected", [

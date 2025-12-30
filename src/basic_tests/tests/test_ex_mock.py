@@ -2,11 +2,11 @@
 # useful for if you want to fake an API response, so you can stay forcused on testing the frontend without needing to verify against backend
 
 import pytest
-from mock_example import get_weather
+from ex_mock import get_weather
 
 def test_get_weather(mocker):
     # mocks requests.get 
-    mock_get = mocker.patch("mock_example.requests.get")
+    mock_get = mocker.patch("ex_mock.requests.get")
 
     # set return values
     mock_get.return_value.status_code = 200
