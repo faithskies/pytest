@@ -1,7 +1,7 @@
-# Example with Fixcture with a tear down operation 'yield'
+# Example with Fixture with a tear down operation 'yield'
 
 import pytest
-from example_db import Database
+from ex_db import Database
 
 @pytest.fixture 
 def db():

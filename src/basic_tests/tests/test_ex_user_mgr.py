@@ -1,6 +1,6 @@
 #Example with a fixture that resets the data between each test. 
 
-from example_user_mgr import UserManager
+from ex_user_mgr import UserManager
 import pytest
 
 @pytest.fixture
